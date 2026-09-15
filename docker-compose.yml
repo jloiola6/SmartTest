@@ -1,0 +1,16 @@
+services:
+  sentinel-cloud:
+    build:
+      context: .
+      dockerfile: Dockerfile.cloud
+    ports:
+      - "4311:4311"
+    environment:
+      PORT: 4311
+      SENTINEL_RUNNER_TOKEN: ${SENTINEL_RUNNER_TOKEN}
+    volumes:
+      - sentinel-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  sentinel-data:

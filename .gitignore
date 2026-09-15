@@ -1,0 +1,30 @@
+# Dependencies and builds
+node_modules/
+dist/
+
+# Local Sentinel state (may contain sessions, reports and user data)
+data/*
+!data/sentinel.example.json
+.runner-work/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Playwright output
+playwright-report/
+test-results/
+blob-report/
+
+# Editor and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
