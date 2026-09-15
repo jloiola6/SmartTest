@@ -53,7 +53,7 @@ O contêiner não instala navegador nem executa IA. Playwright, Git, Claude Code
 ## Fluxo de uso
 
 1. Cadastre um projeto com nome e URL, como `http://localhost:8001`.
-2. Informe a pasta do repositório para capturar branch e commit automaticamente.
+2. Escolha **Projeto local** para informar a pasta e detectar branch/commit, ou **Ambiente remoto** para testar STG/QA apenas pela URL.
 3. Use **Gravar fluxo**, realize as ações no navegador e feche a janela ao terminar.
 4. Abra o teste gerado para editar ou executar.
 5. Use **Explorar com IA** para inspecionar páginas, links, console, rede e acessibilidade.
